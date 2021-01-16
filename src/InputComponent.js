@@ -4,11 +4,14 @@ export default function InputComponent(props) {
     const {
     currencyOption,
     selectedCurreny,
-    onChangeCurrency
+    onChangeCurrency,
+    onChangeAmount,
+    amount
+
     } = props
     return (
         <div>
-          <input className="form-control" type="number"></input>
+          <input onChange={onChangeAmount} value={amount} className="form-control" type="number"></input>
             <select onChange={onChangeCurrency}  value={selectedCurreny}>
                 {   currencyOption.map((option)=>(
                     <option key={option} value={option}>{option}</option>
