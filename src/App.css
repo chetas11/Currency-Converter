@@ -23,6 +23,7 @@ h1 {
     background-color: aliceblue;
     height: 3.4rem;
     width: 5rem;
+    padding: 0.25rem;
 }
 
 .equals{
@@ -34,4 +35,10 @@ h1 {
 .currencyField {
   border-radius: 0.3rem;
   background-color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 3rem;
+  }
 }
