@@ -25,4 +25,4 @@
 
 #### Screenshot -
 
-![Screenshot]("https://github.com/chetas11/Currency-Converter/blob/master/Screenshot_2021-01-18%20Currency%20Converter.png")
+![Screenshot](https://github.com/chetas11/Currency-Converter/blob/master/Screenshot_2021-01-18%20Currency%20Converter.png)
