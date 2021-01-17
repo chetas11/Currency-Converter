@@ -13,10 +13,14 @@ h1 {
   margin-bottom: 0.8rem;
   text-decoration: underline;
   color: aliceblue;
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
 }
 
-select{
+.select{
     margin-left: .5rem;
+    border-radius: 0.3rem;
+    background-color: aliceblue;
 }
 
 .equals{

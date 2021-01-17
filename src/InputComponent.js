@@ -1,6 +1,15 @@
 import React from 'react'
+import { makeStyles } from '@material-ui/core/styles';
+import Select from '@material-ui/core/Select';
+
+const useStyles = makeStyles((theme) => ({
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
 export default function InputComponent(props) {
+    const classes = useStyles();
     const {
     currencyOption,
     selectedCurreny,
@@ -12,11 +21,16 @@ export default function InputComponent(props) {
     return (
         <div>
           <input onChange={onChangeAmount} value={amount} className="form-control" type="number"></input>
-            <select onChange={onChangeCurrency}  value={selectedCurreny}>
-                {   currencyOption.map((option)=>(
+            <Select
+            className="select"
+            native
+            value={selectedCurreny}
+            onChange={onChangeCurrency}
+            >
+            {   currencyOption.map((option)=>(
                     <option key={option} value={option}>{option}</option>
                     ))}
-            </select>  
+            </Select> 
         </div>
     )
 }
